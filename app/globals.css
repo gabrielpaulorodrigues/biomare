@@ -46,4 +46,5 @@
 body {
   background: var(--white); 
   color: var(--color-text-primary);  
+  font-family: var(--font-roboto), sans-serif;
 }
