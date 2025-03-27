@@ -3,10 +3,8 @@
 :root {
   /* Cores Principais */
   --primary: #59C13D;    /* Verde principal - usado em botões, ícones e destaques */
-  --primary-10: #59C13D10; /* Verde com 10% de opacidade - usado em backgrounds */
 
   --accent: #1A7BBF;     /* Azul - usado em textos de destaque */
-  --accent-10: #1A7BBF10; /* Azul com 10% de opacidade - usado em backgrounds */
 
   /* Cores de Background */
   --bg-light: #F5F9F3;   /* Fundo claro */
@@ -46,5 +44,30 @@
 body {
   background: var(--white); 
   color: var(--color-text-primary);  
-  font-family: var(--font-roboto), sans-serif;
+}
+
+@keyframes smoothBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+.smooth-bounce {
+  animation: smoothBounce 5s ease-in-out infinite;
+}
+
+@keyframes floatSmooth {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+}
+
+.animate-floatSmooth {
+  animation: floatSmooth 10s ease-in-out infinite;
 }
